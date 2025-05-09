@@ -63,14 +63,7 @@ class Group():
         
 
 
-myInput = [
-    'asdf', 'qwerasdf', 'qwedfasdfzx', 'jklñ', 'qwer', 'poiuio', 'mnbvbn', 
-    'asdfasdfjkjk', 'asdfyuioqwier', 'Reaul', 'asdfjqyqdjxk', 'element12', 
-    'element13', 'element14', 'element15', 'element16', 'element17', 
-    'element18', 'element19', 'element20', 'element21', 'element22', 
-    'element23', 'element24', 'element25', 'element26', 'element27', 
-    'element28', 'element29', 'element30'
-]
+myInput = input('enter members: ').split()
 group = Group(myInput, mGroup)
 print(f'Number of groups: {group.nGroups}')
 for i in group.generateGroups():
